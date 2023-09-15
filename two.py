@@ -28,12 +28,12 @@ i = 1
  
 for tr in tr:
     td = tr.find_all('td')
-    name = td[1].string.strip().replace('\n', '').replace('\r', '')
-    gametype = td[2].string.replace(" ", "").replace('\n', '').replace('\r', '')
-    start = td[3].string.replace(" ", "").replace('\n', '').replace('\r', '')
-    end = td[4].string.replace(" ", "").replace('\n', '').replace('\r', '')
-    time = td[5].string.replace(" ", "").replace('\n', '').replace('\r', '')
-    origin = td[6].find('span').string.replace(" ", "").replace('\n', '').replace('\r', '')
+    name = td[1]。string。strip().replace('\n', '')。replace('\r', '')
+    gametype = td[2]。string。replace(" ", "")。replace('\n', '')。replace('\r', '')
+    start = td[3]。string。replace(" ", "")。replace('\n', '')。replace('\r', '')
+    end = td[4]。string。replace(" ", "")。replace('\n', '')。replace('\r', '')
+    time = td[5]。string。replace(" ", "")。replace('\n', '')。replace('\r', '')
+    origin = td[6]。find('span')。string。replace(" ", "")。replace('\n', '')。replace('\r', '')
  
     sp = str(td[6]).split('"')
     http = sp[3]
