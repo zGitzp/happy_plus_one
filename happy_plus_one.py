@@ -54,4 +54,4 @@ else:
         desp=desp+"今日没有游戏可领!"
 #send_message_fangtang("今日喜加一",desp)
 pushplus("今日喜加一",desp)
-print(desp）  
+print(desp)  
