@@ -33,7 +33,7 @@ for tr in tr:
     start = td[3]。string。replace(" ", "")。replace('\n', '')。replace('\r', '')
     end = td[4]。string。replace(" ", "")。replace('\n', '')。replace('\r', '')
     time = td[5]。string。replace(" ", "")。replace('\n', '')。replace('\r', '')
-    origin = td[6]。find('span')。string。replace(" ", "")。replace('\n', '')。replace('\r', '')
+    origin = td[6]。find('span')。string。replace(" "， "")。replace('\n', '')。replace('\r', '')
  
     sp = str(td[6]).split('"')
     http = sp[3]
