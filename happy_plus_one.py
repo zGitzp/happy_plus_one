@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+desp = ''
  
 ##Server酱更改为PUSHPLUS，此段代码注释了###Server酱推送模块，PUSH_KEY替换自己的
 #def send_message_fangtang(_item,_message):
@@ -50,8 +51,8 @@ if tbody is not None:
         http=sp[3]
      
         desp=desp+"序号："+str(i)+'\r'+"游戏名称："+name+'\r'+"类型："+gametype+'\r'+"开始时间："+start+'\r'+"结束时间："+end+'\r'+"是否永久："+time+'\r'+"平台："+oringin+'\r'+"链接："+http+'\r'
-# else:
-    #    desp=desp+"今日没有游戏可领!"
+else:
+        desp=desp+"今日没有游戏可领!"
 #send_message_fangtang("今日喜加一",desp)
 pushplus("今日喜加一",desp)
-print(desp)  
+#print(desp)  
