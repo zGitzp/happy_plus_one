@@ -1,3 +1,5 @@
+# two 第二种写法，修改了部分代码，也可以运行，这只是为了存档
+# 若要运行，将名字改为happy_plus_one.py即可，one和two，只要存在一个happy_plus_one.py就行
 import sys
 import requests
 from bs4 import BeautifulSoup
